@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Boutique Recommendation">
+  <meta name="author" content="Shumei Lin">
+  <title>Boutique Recommendation</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#footer">Contact</a>
+      <a href="#footer">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="LogoutServlet">Logout</a>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>Stylist</span>
+        <br /><span class="br">Boutiques Recommendation</span>
+      </p>
+    </header>
+
+    <section class="main-section">
+      <div id="login-form">
+	    <label for="username">Username:</label>
+	    <input id="username" name="username" type="text">
+	    <label for="password">Password:</label>
+	    <input id="password" name="password" type="password">
+	    <button id="login-btn">Login</button>
+	    <button id="show-register-btn">
+	    	<a href="#register-form">New User Register Here</a>
+	    </button>
+	    <p id="login-error"></p>
+	  </div>
+	  
+	  <div id="register-form">
+	    <label for="registerUsername">Username:</label>
+	    <input id="registerUsername" name="registerUsername" type="text">
+	    <label for="registerPassword">Password:</label>
+	    <input id="registerPassword" name="registerPassword" type="password">
+	    <label for="firstName">First Name:</label>
+	    <input id="firstName" name="firstName" type="text">
+	    <label for="lastName">Last Name:</label>
+	    <input id="lastName" name="lastName" type="text">
+	    <button id="register-btn">Register</button>
+	    <p id="register-error"></p>
+	  </div>
+
+      <aside id="restaurant-nav">
+        <div class="nav-icon">
+          <i class="fa fa-shopping-bag fa-2x"></i>
+        </div>
+        <nav class="main-nav">
+          <a href="#" id="nearby-btn" class="main-nav-btn active">
+            <i class="fa fa-map-marker"></i> Nearby
+          </a>
+          <a href="#" id="fav-btn" class="main-nav-btn">
+            <i class="fa fa-heart"></i> My Favorites
+          </a>
+          <a href="#" id="recommend-btn" class="main-nav-btn">
+            <i class="fa fa-thumbs-up"></i> Recommendation
+          </a>
+        </nav>
+      </aside>
+
+      <ul id="restaurant-list">
+        <li class="restaurant">
+          <img alt="restaurant image" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" />
+          <div>
+            <a class="restaurant-name" href="#">Restaurant</a>
+            <p class="restaurant-category">Vegetarian</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <p class="restaurant-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
+          <div class="fav-link">
+            <i class="fa fa-heart"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  
+  <footer id="footer">
+    <p class="title">What We Do</p>
+    <p>"Help you find the best local boutiques."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Dallas, TX</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>slin471992@gmail.com</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 202 489 6312</p>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

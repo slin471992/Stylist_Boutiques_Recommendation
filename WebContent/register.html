@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Boutique Recommendation">
+  <meta name="author" content="Shumei Lin">
+  <title>Boutique Recommendation</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#footer">Contact</a>
+      <a href="#footer">About</a>
+    </nav>
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="LogoutServlet">Logout</a>
+    <i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  </header>
+  
+  <div class="container">
+    <header>
+      <p>
+        <span>Stylist</span>
+        <br /><span class="br">Boutiques Recommendation</span>
+      </p>
+    </header>
+
+    <section class="main-section">
+      <div id="register-form">
+	    <label for="registerUsername">Username:</label>
+	    <input id="registerUsername" name="registerUsername" type="text">
+	    <label for="registerPassword">Password:</label>
+	    <input id="registerPassword" name="registerPassword" type="password">
+	    <label for="firstName">First Name:</label>
+	    <input id="firstName" name="firstName" type="text">
+	    <label for="lastName">Last Name:</label>
+	    <input id="lastName" name="lastName" type="text">
+	    <button id="register-btn">Register</button>
+	    <p id="register-error"></p>
+	  </div>
+    </section>
+  </div>
+  
+  <footer id="footer">
+    <p class="title">What We Do</p>
+    <p>"Help you find the best local boutiques."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Dallas, TX</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>slin471992@gmail.com</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>+1 202 489 6312</p>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
